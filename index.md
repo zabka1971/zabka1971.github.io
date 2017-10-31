@@ -13,3 +13,7 @@
 #### GitHub
 
 [GitHub Pages](https://pages.github.com/)
+
+## Hosting
+
+[zabkinedobroty.sk domain control panel](https://moje.wy.sk/)
