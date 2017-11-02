@@ -19,9 +19,10 @@
 
 [GitHub Pages](https://pages.github.com/)
 
-#### Browser testing
+#### Web pages testing
 
 [Browser Stack](https://www.browserstack.com/)
+[Microsoft Edge Developer Website](https://developer.microsoft.com/en-us/microsoft-edge/)
 
 ## Hosting
 
