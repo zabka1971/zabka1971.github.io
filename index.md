@@ -19,6 +19,10 @@
 
 [GitHub Pages](https://pages.github.com/)
 
+#### Browser testing
+
+[Browser Stack](https://www.browserstack.com/)
+
 ## Hosting
 
 [zabkinedobroty.sk domain control panel](https://moje.wy.sk/)
