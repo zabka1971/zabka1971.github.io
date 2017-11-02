@@ -8,6 +8,11 @@
 
 [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
 
+### Media Tools
+
+[Plex](plex.md)
+
+
 ### Developer Tools
 
 #### GitHub
@@ -17,7 +22,3 @@
 ## Hosting
 
 [zabkinedobroty.sk domain control panel](https://moje.wy.sk/)
-
-Media Tools
-
-[Plex](plex.md)
