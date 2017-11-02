@@ -15,6 +15,10 @@
 
 ### Developer Tools
 
+#### Text Editors
+
+[Brackets](http://brackets.io/)
+
 #### GitHub
 
 [GitHub Pages](https://pages.github.com/)
@@ -25,6 +29,9 @@
 [Browser Stack](https://www.browserstack.com/)
 
 [Microsoft Edge Developer Website](https://developer.microsoft.com/en-us/microsoft-edge/)
+
+#### Remote Computing
+[MobaXterm](https://mobaxterm.mobatek.net/)
 
 ## Hosting
 
