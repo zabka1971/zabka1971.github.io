@@ -1,4 +1,4 @@
-# Web development resources
+# IT knowledge
 
 ## Software
 
