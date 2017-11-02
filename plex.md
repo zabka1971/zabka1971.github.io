@@ -2,4 +2,4 @@
 
 ## Plex Media Player
 
-[Documentation] (https://support.plex.tv/hc/en-us/sections/201360177)
+[Documentation](https://support.plex.tv/hc/en-us/sections/201360177)
