@@ -1,4 +1,4 @@
-# Plex Media Player
+# Plex
 
 ## Plex Media Player
 
