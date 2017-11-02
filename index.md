@@ -18,6 +18,7 @@
 #### GitHub
 
 [GitHub Pages](https://pages.github.com/)
+[Setting up Github with Visual Studio Code on OSX](https://www.michaelcrump.net/using-github-with-visualstudio-code/)
 
 #### Web pages testing
 
