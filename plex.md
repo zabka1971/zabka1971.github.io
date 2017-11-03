@@ -6,6 +6,28 @@
 
 [FAQ](https://support.plex.tv/hc/en-us/sections/201375708)
 
+Set Raspberry Pi3 Embedded PMP clock/time zone
+
+[Original post](http://forums.plex.tv/discussion/212006/pi3-embedded-pmp-clock-time-zone#latest)
+
+1. Connect through SSH (Used Putty) and connect to "PlexMediaPlayer"
+
+User: Root or root
+
+Password: plex
+
+2. nano /storage/.config/autostart.sh
+
+3. rm /var/run/localtime
+
+4. ln -sf /usr/share/zoneinfo/Europe/Bratislava /var/run/localtime
+
+5. Ctrl+x and Yes
+
+6. chmod +x /storage/.config/autostart.sh
+
+7. Reboot Raspberry
+
 ## RASPlex
 
 RASPlex: access through WinSCP
