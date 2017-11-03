@@ -29,6 +29,7 @@ Non-english subtitles have to be saved with 'UTF-8 with BOM' encoding to be corr
 
 #### PowerShell
 [Convert file from most encodings to UTF-8](https://www.powershelladmin.com/wiki/Convert_from_most_encodings_to_utf8_with_powershell)
+[Konverze kódování souboru](Powershell)(http://dev.goshoom.net/2011/05/konverze-kodovani-souboru-powershell/)
 
 #### Web pages testing
 
