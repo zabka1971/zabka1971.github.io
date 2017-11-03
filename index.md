@@ -27,6 +27,9 @@ Non-english subtitles have to be saved with 'UTF-8 with BOM' encoding to be corr
 [GitHub Pages](https://pages.github.com/)
 [Setting up Github with Visual Studio Code on OSX](https://www.michaelcrump.net/using-github-with-visualstudio-code/)
 
+#### PowerShell
+[Convert file from most encodings to UTF-8](https://www.powershelladmin.com/wiki/Convert_from_most_encodings_to_utf8_with_powershell)
+
 #### Web pages testing
 
 [Browser Stack](https://www.browserstack.com/)
