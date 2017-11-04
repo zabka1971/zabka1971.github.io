@@ -10,6 +10,7 @@ If you are just starting with plex and want to **reorganize your files** anyway,
              1. trackartist - tracktitle.mp3
              2. trackartist - tracktitle.mp3
              ...
+
 and for a multi-disc album:
 
     Artist /
