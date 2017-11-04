@@ -48,7 +48,8 @@
 	- for any other genre use "default" preset (%genre%\%ALBUMARTISTSORTORDER%\'['%date%']' %ALBUMSORTORDER%\[%discnumber%_]%tracknumber% - [%track artist% - ]%title%)
 	- for Plex use one of options below:
 
-    Music\<Album Artist> - <Album>\$IsNull(<Disc#>,,CD$Pad(<Disc#>,2)\)<Track#> - $If(<Artist>=<Album Artist>,,<Artist>" - ")$Sort(<Title>)
-    Jazz\<Album Artist> - <Album>\$IsNull(<Disc#>,,CD$Pad(<Disc#>,2)\)<Track#> - $If(<Artist>=<Album Artist>,,<Artist>" - ")$Sort(<Title>)
-    Classical\<Album Artist> - <Album>\$IsNull(<Disc#>,,CD$Pad(<Disc#>,2)\)<Track#> - $If(<Artist>=<Album Artist>,,<Artist>" - ")$Sort(<Title>)
-  
+```
+\\zabka_nas\Music\<Album Artist> - <Album>\$IsNull(<Disc#>,,CD$Pad(<Disc#>,2)\)<Track#> - $If(<Artist>=<Album Artist>,,<Artist>" - ")$Sort(<Title>)
+\\zabka_nas\Jazz\<Album Artist> - <Album>\$IsNull(<Disc#>,,CD$Pad(<Disc#>,2)\)<Track#> - $If(<Artist>=<Album Artist>,,<Artist>" - ")$Sort(<Title>)
+\\zabka_nas\Classical\<Album Artist> - <Album>\$IsNull(<Disc#>,,CD$Pad(<Disc#>,2)\)<Track#> - $If(<Artist>=<Album Artist>,,<Artist>" - ")$Sort(<Title>)
+```  
