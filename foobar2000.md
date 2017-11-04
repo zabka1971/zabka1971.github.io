@@ -14,10 +14,10 @@
 * **Artist Sort** - from "Artist Name", in form `<Last Name>, <all others names>`
 * **Track Title**
 	* use Clean Up function
-	* Capitalize all words in titles except "a", "an", "the", "at", "by", "for", "in", "of", "on", "to", "up", "and", "as", "but", "it", "or", "nor"
-* **Track Title Sort** - from "Track Title", in form `<rest of title>, <one of values "The", "A", "An", "Der", "Die", "Das", "Ein", "Eine", "El", "Los", "La", "Las", "Un", "Unos", "Una", "Unas", "Le", "Les", "Une", "Des")`
+	* capitalize all words via Format from Other Fields using pattern `$replace(%title%,' A ',' a ',' An ',' an ',' The ',' the ',' And ',' and ',' But ',' but ',' Or ',' or ',' Nor ',' nor ',' As ',' as ',' At ',' at ',' By ',' by ',' For ',' for ',' In ',' in ',' Of ',' of ',' On ',' on ',' To ',' to ',' Up ',' up ',' It ',' it ')`
+* **Track Title Sort** - transform via Format from Other Fields using pattern `$swapprefix(%title%,the,a,an,der,die,das,ein,eine,el,los,la,las,un,unos,una,unas,le,les,une,des)`
 * **Album Title** - use Clean Up function
-* **Album Title Sort** - from "Album Title", in form `<rest of title>, <one of values "The", "A", "An", "Der", "Die", "Das", "Ein", "Eine", "El", "Los", "La", "Las", "Un", "Unos", "Una", "Unas", "Le", "Les", "Une", "Des")`
+* **Album Title Sort** - transform via Format from Other Fields using pattern `$swapprefix(%album%,the,a,an,der,die,das,ein,eine,el,los,la,las,un,unos,una,unas,le,les,une,des)`
 * **Date** - year of original song release
 * **Genre** - according to musicbrainz.org
 * **Composer** - applicable only for classical music
