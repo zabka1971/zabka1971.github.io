@@ -31,20 +31,20 @@
 * Lyrics - try to find lyrics using foobar extensions or manually
 * Cover Art - standard resolution 500x500 px, best source is allmusic.com or amazon.com
 	
-4. Put any files other than tracks into directory called "_info", name files using following patterns:
-	- "00_notes.txt" put any text info into this file including source URLs (usually allmusic.com and amazon.com)
-	- "nn_<scan_description>" put any scans of covers and booklets, nn is ordinal number (01, 02, 03...), scan_description should adhere to followning pattern and order:
-	- "box_front"
-	- "box_back"
-	- "slipcase_front"
-	- "slipcase_back"
-	- "cover_front"
-	- "cover_back"
-	- "traycard_out"
-	- "traycard_in"
-	- "disc"
-	- "booklet_nn"
-	- "sticker_nn"
+4. Put any files other than tracks into directory called `_info`, name files using following patterns:
+* `00_notes.txt` put any text info into this file including source URLs (usually allmusic.com and amazon.com)
+* `nn_<scan_description>` put any scans of covers and booklets, nn is ordinal number (01, 02, 03...), scan_description should adhere to followning pattern and order:
+	* `box_front`
+	* `box_back`
+	* `slipcase_front`
+	* `slipcase_back`
+	* `cover_front`
+	* `cover_back`
+	* `traycard_out`
+	* `traycard_in`
+	* `disc`
+	* `booklet_nn`
+	* `sticker_nn`
 	
 5. Rename track files and move them to music directory (right click menu->File Operations->Move to->preset name as follows):
 	- for classical genre use "classical" preset (%genre%\%ALBUMARTISTSORTORDER%\%ALBUMSORTORDER%\[%discnumber%_]%tracknumber% - [%track artist% - ]%title%)
