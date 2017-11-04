@@ -1,4 +1,5 @@
-# How to name and tag audio files
+# foobar2000
+## How to name and tag audio files
 
 1. Rename track files to be in proper order (right click menu->File Operations->Rename to->My rename):
 ```
