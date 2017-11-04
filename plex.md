@@ -1,5 +1,57 @@
 # Plex
 
+## Music files preparation
+
+If you are just starting with plex and want to **reorganize your files** anyway, I recommend the following approach
+
+    Music /
+       Artist /
+          Albumartist - Albumtitle /
+             1. trackartist - tracktitle.mp3
+             2. trackartist - tracktitle.mp3
+             ...
+and for a multi-disc album:
+
+    Artist /
+          Albumartist - Albumtitle /
+             Disc 1 /
+                1. trackartist - tracktitle.mp3
+                2. trackartist - tracktitle.mp3
+                ...
+             Disc 2 /
+                1. trackartist - tracktitle.mp3
+                2. trackartist - tracktitle.mp3
+                ...
+
+do note the distinction between Albumartist and Trackartist.
+There are separate metatags for these. You need to fill both.
+This then provides a means to deal with sampler albums: 
+The typical sampler simply uses as Albumartist Various Artists 
+And that is what you should use too, since Plex treats 'Various Artists' a little different. (the standard album sorting mechanism is by release year, descending whereas for Various Artists it is alphabetically, ascending)
+
+You can supply your **own artist photos, artist backdrops and album backdrops**.
+
+This however requires that your music files are organised in a folder structure like this:
+
+    Music /
+       Albumartistname /
+          artist-poster.jpg      <--- a photo of the artist
+          artist-background.jpg  <--- a background/wallpaper particular to the artist
+          Albumartistname - Albumtitle /
+             cover.jpg           <--- album cover
+             background.jpg      <--- album background/wallpaper [if not present, inherited from the 'albumartist' level]
+             1. Trackartist - Tracktitle.mp3
+             1. Trackartist - Tracktitle.txt
+             2. Trackartist - Tracktitle.mp3
+             2. Trackartist - Tracktitle.lrc
+             ...
+
+The graphic files can be in jpg, png, or tbn format. For all filenames there are a few alternative names which can also be used.
+
+The txt files can contain the song lyrics in plain text format.
+
+The lrc files can contain the 'timed' song lyrics.
+
 ## Plex Media Player
 
 [Documentation](https://support.plex.tv/hc/en-us/sections/201360177)
