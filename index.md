@@ -8,11 +8,8 @@
 
 [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
 
-### Media Tools
+### [Media Tools](media.md)
 
-[Plex](plex.md)
-
-[foobar2000](foobar2000.md)
 
 #### Matroška
 
