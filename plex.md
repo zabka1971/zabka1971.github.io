@@ -49,6 +49,10 @@ This however requires that your music files are organised in a folder structure 
 
 The graphic files can be in jpg, png, or tbn format. For all filenames there are a few alternative names which can also be used.
 
+The key to custom posters it the ratio...
+2:3 for Posters
+16:9 for Fanart (Backgrounds)
+
 The txt files can contain the song lyrics in plain text format.
 
 The lrc files can contain the 'timed' song lyrics.
