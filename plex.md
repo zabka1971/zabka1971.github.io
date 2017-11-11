@@ -53,9 +53,9 @@ The key to custom posters it the ratio...
 2:3 for Posters
 16:9 for Fanart (Backgrounds)
 
-The txt files can contain the song lyrics in plain text format.
+[Adding Local Lyrics](https://support.plex.tv/hc/en-us/articles/215916117-Adding-Local-Lyrics)
 
-The lrc files can contain the 'timed' song lyrics.
+[Local Media Assets - Movies](https://support.plex.tv/hc/en-us/articles/200220677-Local-Media-Assets-Movies)
 
 ## Plex Media Player
 
