@@ -20,6 +20,8 @@
 
 [GitHub Pages](https://pages.github.com/)
 
+[Applications and components that support Markdown](https://www.markdownguide.org/tools/)
+
 [Setting up Github with Visual Studio Code on OSX](https://www.michaelcrump.net/using-github-with-visualstudio-code/)
 
 #### PowerShell
