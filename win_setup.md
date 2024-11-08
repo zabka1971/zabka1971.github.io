@@ -82,6 +82,10 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 
 ## to be (re)moved ##
 
+Git portable
+pushd popd to work with UNC paths in command prompt
+configure GIT - user name and email to be able to commit changes
+
 The Portable Freeware Collection                                            <https://www.portablefreeware.com/>
 
 GitHub Pages documentation <https://docs.github.com/en/pages>
