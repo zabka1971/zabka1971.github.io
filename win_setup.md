@@ -42,7 +42,7 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 
 1. settings are in  %APPDATA%\MusicBrainz\ folder
 
-## Relevant utilities ##
+## C: Relevant utilities ##
 
 ### Actively used ###
 
@@ -52,6 +52,7 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 | JetBrains Mono       | <https://www.jetbrains.com/lp/mono/>               | a typeface for developers |
 | Microsoft 365        | Microsoft Store                                    | |
 | Visual Studio Code   | <https://code.visualstudio.com/>                   | Code Editing. Redefined |
+| Git                  | <https://git-scm.com/downloads>                    | --distributed-is-the-new-centralized |
 | LosslessCut          | <https://mifi.github.io/lossless-cut/>             | ultimate cross platform FFmpeg GUI, config file is set to program directory as described in <https://mifi.github.io/lossless-cut/installation.html> |
 | MKVToolnix           | <https://mkvtoolnix.download/>                     | Matroska tools for Linux/Unix and Windows forum: <https://help.mkvtoolnix.download/> |
 | MKVCleaver           | <https://blogs.sapib.ca/apps/mkvcleaver/>          | front end (GUI) for MKVExtract.exe - more features when compared with gMKVExtractGUI |
@@ -82,7 +83,12 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 
 ## to be (re)moved ##
 
-Git portable
+https://code.visualstudio.com/docs/editor/portable
+
+Put zabkanas into Allowed UNChosts setting
+
+Git portable - set git.path using double slashes (according to https://www.diaryfolio.com/2022/01/vs-code-portable-git-shell-integration.html)
+
 pushd popd to work with UNC paths in command prompt
 configure GIT - user name and email to be able to commit changes
 
