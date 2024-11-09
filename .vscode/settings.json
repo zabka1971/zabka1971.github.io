@@ -1,12 +1,26 @@
 {
     "cSpell.words": [
         "APPDATA",
+        "ASUS",
+        "bootable",
         "Brainz",
+        "bunkus",
         "LOCALAPPDATA",
         "Matroska",
         "mklink",
+        "mkvextract",
+        "mkvpropedit",
         "mkvtoolnix",
+        "muxing",
+        "popd",
+        "pushd",
+        "Radeon",
+        "resizer",
+        "stacher",
         "USERPROFILE",
         "zabkanas"
+    ],
+    "cSpell.ignoreWords": [
+        "Chosts"
     ]
 }

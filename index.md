@@ -2,6 +2,8 @@
 
 ## Software
 
+### [Windows machine environment setup](win_setup.md#windows-machine-environment-setup)
+
 ### [MS Office](ms_office.md)
 
 #### Windows
@@ -25,6 +27,7 @@
 [Setting up Github with Visual Studio Code on OSX](https://www.michaelcrump.net/using-github-with-visualstudio-code/)
 
 #### PowerShell
+
 [Convert file from most encodings to UTF-8](https://www.powershelladmin.com/wiki/Convert_from_most_encodings_to_utf8_with_powershell)
 
 [Konverze kódování souboru (Powershell)](http://dev.goshoom.net/2011/05/konverze-kodovani-souboru-powershell/)
@@ -36,6 +39,7 @@
 [Microsoft Edge Developer Website](https://developer.microsoft.com/en-us/microsoft-edge/)
 
 #### Remote Computing
+
 [MobaXterm](https://mobaxterm.mobatek.net/)
 
 ## Hosting

@@ -2,7 +2,7 @@
 
 ## A: Specific considerations for nuc8i7hnk computer ##
 
-Support Site: [ASUS Support Site]
+Manufacturer's Support Site: [ASUS Support Site](https://www.asus.com/us/supportonly/nuc8i7hnk/helpdesk_download/)
 
 After Window Clean Install reinstall drivers from `\\zabkanas\software\drivers\nuc87hnk\`
 
@@ -10,41 +10,31 @@ After Window Clean Install reinstall drivers from `\\zabkanas\software\drivers\n
 
 ### Steps during Windows setup ###
 
-
-
-
-
 1. Windows instance is linked to Microsoft account <roman.miskovsky@gmail.com>
-
 2. OneDrive is activated during Windows setup
-
 3. backed up settings and apps are restored from previous Windows installation
 
-User profile folder is `%USERPROFILE%`
+### Important locations ###
 
-Put small utilities distributed without install into %USERPROFILE%\Tools
+User profile folder is `%USERPROFILE%`
 
 OneDrive folder is `%OneDrive%`, its content is being synced against OneDrive
 
 Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to be backed up
 
-1. Install all relevant applications
+### Portable applications ###
 
-2. copy backup of all relevant configuration files into corresponding folders: (run batch file, file to be created)
+All portable applications are located on same drive as Total Commander, drive can be obtained by `%COMMANDER_DRIVE%` (TC pseudo-environment variable)
 
-3. Create symbolic links from all relevant configuration files to dedicated OneDrive folder: run file  %OneDrive%\backup\create_links.bat in elevated command prompt (Run as administrator...)
+Global files and setting that should be outside of application folders are located in `%COMMANDER_DRIVE%\_` folder
+
+#### Set environmental variables in batch ####
+
+Batch file `%COMMANDER_DRIVE%\_\set_environment.cmd` creates all environmental variables needed for portable applications [(based on this explanation)](<https://stackoverflow.com/questions/21606419/set-windows-environment-variables-with-a-batch-file>)
 
 ### Restore network shortcuts ###
 
-1. copy everything in %OneDrive%\backup\Network Shortcuts\ into %APPDATA%\Microsoft\Windows\Network Shortcuts\
-
-### Foobar ###
-
-1. settings are in %APPDATA%\foobar2000-v2\ folder
-
-### MusicBrainz Picard ###
-
-1. settings are in  %APPDATA%\MusicBrainz\ folder
+1. copy everything in `%OneDrive%\backup\Network Shortcuts\` into `%APPDATA%\Microsoft\Windows\Network Shortcuts\`
 
 ## C: Relevant utilities ##
 
@@ -55,8 +45,8 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 | Total Commander      | <https://www.ghisler.com/>                         | file manager for Windows run it from %OneDrive%\backup\TotalCMD\Total Commander_from_E.lnk, pin it to taskbar |
 | JetBrains Mono       | <https://www.jetbrains.com/lp/mono/>               | a typeface for developers |
 | Microsoft 365        | Microsoft Store                                    | |
-| Visual Studio Code   | <https://code.visualstudio.com/>                   | Code Editing. Redefined |
-| Git                  | <https://git-scm.com/downloads>                    | --distributed-is-the-new-centralized |
+| [Visual Studio Code](#visual-studio-code)   | <https://code.visualstudio.com/>                   | Code Editing. Redefined |
+| [Git](#git)                  | <https://git-scm.com/downloads>                    | --distributed-is-the-new-centralized |
 | LosslessCut          | <https://mifi.github.io/lossless-cut/>             | ultimate cross platform FFmpeg GUI, config file is set to program directory as described in <https://mifi.github.io/lossless-cut/installation.html> |
 | MKVToolnix           | <https://mkvtoolnix.download/>                     | Matroska tools for Linux/Unix and Windows forum: <https://help.mkvtoolnix.download/> |
 | MKVCleaver           | <https://blogs.sapib.ca/apps/mkvcleaver/>          | front end (GUI) for MKVExtract.exe - more features when compared with gMKVExtractGUI |
@@ -85,23 +75,45 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 | Radeon GPU           | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/AMD/Intel-AMD-Radeon-RX-Vega-M-Graphics-Driver-30-0-13037-4001-64-bit.shtml> | |
 | Intel HD Graphics    | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/INTEL/Intel-HD-630-CPU-Graphics-Driver-31-0-101-2130.shtml> | |
 
+## Visual Studio Code ##
+
+1. install from ZIP file
+2. activate [VS Code portable mode](https://code.visualstudio.com/docs/editor/portable) by creating `data` folder in installation folder of VS Code (user settings will be in `data\user-data\User\` folder)
+3. create `tmp` folder in `data` folder to force temporary files of VS Code to be stored in portable location
+4. Put `zabkanas` into Allowed UNCHosts setting - to be able to [work with UNC paths in VS Code](https://stackoverflow.com/questions/76267211/vs-code-cannot-open-unc-path-files-because-of-allowed-unchosts-case-sensitivity) without mapping it to logical drives
+
+## Git ##
+
+1. install from ZIP file, to make Git fully portable continue with next step
+2. to avoid global config file to be created in `%USERPROFILE%` create new user environment variable [GIT_CONFIG_GLOBAL](https://git-scm.com/docs/git-config#ENVIRONMENT) (created as part of [batch environment variables setting](#set-environmental-variables-in-batch))
+3. set VS code setting variable git.path using double slashes in path name (according to <https://www.diaryfolio.com/2022/01/vs-code-portable-git-shell-integration.html>)
+
+### Useful Git commands ###
+
+[Displaying where GIT configuration settings of all scopes is stored:](https://stackoverflow.com/questions/12254076/how-do-i-show-my-global-git-configuration)
+
+```console
+git config --list --show-origin --show-scope
+```
+
+[Setting Global Git Username and Email](https://linuxize.com/post/how-to-configure-git-username-and-email/) - prerequisite for commit changes to remote repository
+
+```console
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
+
 ## to be (re)moved ##
 
-Git portable
+### Foobar ###
 
-1. create new user environment variable GIT_CONFIG_GLOBAL=E:\_\Git\.gitconfig
+1. settings are in %APPDATA%\foobar2000-v2\ folder
 
-2. set VS code setting variable git.path using double slashes in path name (according to https://www.diaryfolio.com/2022/01/vs-code-portable-git-shell-integration.html)
+### MusicBrainz Picard ###
 
-Display where GIT configuration of all scopes is stored: e:\git\bin\git config --list --show-origin --show-scope
-
-
-Put Visual Studio Code into portable mode after unpacking install ZIP https://code.visualstudio.com/docs/editor/portable
-
-Put zabkanas into Allowed UNChosts setting
+1. settings are in  %APPDATA%\MusicBrainz\ folder
 
 pushd popd to work with UNC paths in command prompt
-configure GIT - user name and email to be able to commit changes
 
 The Portable Freeware Collection                                            <https://www.portablefreeware.com/>
 
@@ -112,4 +124,10 @@ Writing on GitHub <https://docs.github.com/en/get-started/writing-on-github>
 
 1. `mklink /J "%OneDrive%\backup\extra\MKVToolnix" "%LOCALAPPDATA%\bunkus.org\mkvtoolnix-gui"`
 
-[ASUS Support Site]: https://www.asus.com/us/supportonly/nuc8i7hnk/helpdesk_download/
+### Restore procedure before portable application being used ###
+
+1. Install all relevant applications
+
+2. copy backup of all relevant configuration files into corresponding folders: (run batch file, file to be created)
+
+3. Create symbolic links from all relevant configuration files to dedicated OneDrive folder: run file  %OneDrive%\backup\create_links.bat in elevated command prompt (Run as administrator...)
