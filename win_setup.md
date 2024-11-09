@@ -10,6 +10,10 @@ After Window Clean Install reinstall drivers from `\\zabkanas\software\drivers\n
 
 ### Steps during Windows setup ###
 
+
+
+
+
 1. Windows instance is linked to Microsoft account <roman.miskovsky@gmail.com>
 
 2. OneDrive is activated during Windows setup
@@ -83,11 +87,18 @@ Root backup folder is `%OneDrive%\backup\` - copy everything into it that has to
 
 ## to be (re)moved ##
 
-https://code.visualstudio.com/docs/editor/portable
+Git portable
+
+1. create new user environment variable GIT_CONFIG_GLOBAL=E:\_\Git\.gitconfig
+
+2. set VS code setting variable git.path using double slashes in path name (according to https://www.diaryfolio.com/2022/01/vs-code-portable-git-shell-integration.html)
+
+Display where GIT configuration of all scopes is stored: e:\git\bin\git config --list --show-origin --show-scope
+
+
+Put Visual Studio Code into portable mode after unpacking install ZIP https://code.visualstudio.com/docs/editor/portable
 
 Put zabkanas into Allowed UNChosts setting
-
-Git portable - set git.path using double slashes (according to https://www.diaryfolio.com/2022/01/vs-code-portable-git-shell-integration.html)
 
 pushd popd to work with UNC paths in command prompt
 configure GIT - user name and email to be able to commit changes
