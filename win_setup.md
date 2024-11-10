@@ -2,9 +2,11 @@
 
 ## A: Specific considerations for nuc8i7hnk computer ##
 
-Manufacturer's Support Site: [ASUS Support Site](https://www.asus.com/us/supportonly/nuc8i7hnk/helpdesk_download/)
+Former manufacturer's Support Site: [Intel Driver Support Assistant](https://www.intel.com/content/www/us/en/support/intel-driver-support-assistant.html)
 
-After Window Clean Install reinstall drivers from `\\zabkanas\software\drivers\nuc87hnk\`
+Current manufacturer's Support Site: [ASUS Support Site](https://www.asus.com/us/supportonly/nuc8i7hnk/helpdesk_download/)
+
+After Window clean install reinstall drivers from `\\zabkanas\software\drivers\nuc87hnk\` (to eliminate entries with question marks from Device manager)
 
 ## B: Setup standard working environment on Windows machine ##
 
@@ -40,25 +42,26 @@ Batch file `%COMMANDER_DRIVE%\_\set_environment.cmd` creates all environmental v
 
 ### Actively used ###
 
-| Utility              | Link                                               | Comment |
-| -------------------- | -------------------------------------------------- | ------- |
-| Total Commander      | <https://www.ghisler.com/>                         | file manager for Windows run it from %OneDrive%\backup\TotalCMD\Total Commander_from_E.lnk, pin it to taskbar |
-| JetBrains Mono       | <https://www.jetbrains.com/lp/mono/>               | a typeface for developers |
-| Microsoft 365        | Microsoft Store                                    | |
-| [Visual Studio Code](#visual-studio-code)   | <https://code.visualstudio.com/>                   | Code Editing. Redefined |
-| [Git](#git)                  | <https://git-scm.com/downloads>                    | --distributed-is-the-new-centralized |
-| LosslessCut          | <https://mifi.github.io/lossless-cut/>             | ultimate cross platform FFmpeg GUI, config file is set to program directory as described in <https://mifi.github.io/lossless-cut/installation.html> |
-| MKVToolnix           | <https://mkvtoolnix.download/>                     | Matroska tools for Linux/Unix and Windows forum: <https://help.mkvtoolnix.download/> |
-| MKVCleaver           | <https://blogs.sapib.ca/apps/mkvcleaver/>          | front end (GUI) for MKVExtract.exe - more features when compared with gMKVExtractGUI |
-| gMKVExtractGUI       | <https://sourceforge.net/projects/gmkvextractgui/> | GUI for mkvextract utility |
-| JMkvpropedit         | <https://github.com/BrunoReX/jmkvpropedit>         | Batch GUI for mkvpropedit, requires OPEN JDK from <https://adoptium.net/en-GB/> |
-| MKV Muxing Batch GUI | <https://github.com/yaser01/mkv-muxing-batch-gui>  | a robust application for muxing (merging) videos, settings are in %APPDATA%\MKV Muxing Batch GUI\setting.json, so far not known how to change it |
-| Subtitle Edit        | <https://www.nikse.dk/subtitleedit>                | free (open source) editor for video subtitles |
-| Imagine              | <https://www.nyam.pe.kr/dev/imagine/>              | Freeware Image & Animation Viewer for Windows |
-| XnView MP            | <https://www.xnview.com/en/xnviewmp/>              | versatile and powerful photo viewer, image management, image resizer |
-| PotPlayer            | <https://potplayer.tv/>                            | install portable as instructed in <https://www.portablefreeware.com/index.php?id=2483>, same method for PotPlayer Codec Pack 64-bit |
-| PicPick              | <https://picpick.app>                              | All-in-one design tool for everyone |
-| PeaZip               | <https://peazip.github.io/peazip-portable.html>    | free file archiver utility |
+| Utility                                       | Link                                               | Comment                                                                                 |
+| --------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Total Commander](#total-commander)           | <https://www.ghisler.com/>                         | file manager for Windows                                                                |
+| JetBrains Mono                                | <https://www.jetbrains.com/lp/mono/>               | a typeface for developers                                                               |
+| Microsoft 365                                 | Microsoft Store                                    |                                                                                         |
+| [Visual Studio Code](#visual-studio-code)     | <https://code.visualstudio.com/>                   | Code Editing. Redefined                                                                 |
+| [Git](#git)                                   | <https://git-scm.com/downloads>                    | --distributed-is-the-new-centralized                                                    |
+| [LosslessCut](#losslesscut)                   | <https://mifi.github.io/lossless-cut/>             | ultimate cross platform FFmpeg GUI                                                      |
+| [MKVToolnix](#mkvtoolnix)                     | <https://mkvtoolnix.download/>                     | Matroska tools for Linux/Unix and Windows                                               |
+| MKVCleaver                                    | <https://blogs.sapib.ca/apps/mkvcleaver/>          | front end (GUI) for MKVExtract.exe - more features when compared with gMKVExtractGUI    |
+| gMKVExtractGUI                                | <https://sourceforge.net/projects/gmkvextractgui/> | GUI for mkvextract utility                                                              |
+| [JMkvpropedit](#jmkvpropedit)                 | <https://github.com/BrunoReX/jmkvpropedit>         | Batch GUI for mkvpropedit                                                               |
+| [MKV Muxing Batch GUI](#mkv-muxing-batch-gui) | <https://github.com/yaser01/mkv-muxing-batch-gui>  | a robust application for muxing (merging) videos                                        |
+| Subtitle Edit                                 | <https://www.nikse.dk/subtitleedit>                | free (open source) editor for video subtitles                                           |
+| Imagine                                       | <https://www.nyam.pe.kr/dev/imagine/>              | Freeware Image & Animation Viewer for Windows                                           |
+| [XnView MP](#xnview-mp)                       | <https://www.xnview.com/en/xnviewmp/>              | versatile and powerful photo viewer, image management, image resizer                    |
+| [PotPlayer](#potplayer)                       | <https://potplayer.tv/>                            | Multimedia software player                                                              |
+| PicPick                                       | <https://picpick.app>                              | All-in-one design tool for everyone                                                     |
+| PeaZip                                        | <https://peazip.github.io/peazip-portable.html>    | free file archiver utility                                                              |
+| Sumatra PDF                                   | <https://www.sumatrapdfreader.org/>                | PDF, eBook (epub, mobi), comic book (cbz/cbr), DjVu, XPS, CHM, image viewer for Windows |
 
 ### Non-actively used ###
 
@@ -74,6 +77,12 @@ Batch file `%COMMANDER_DRIVE%\_\set_environment.cmd` creates all environmental v
 | Advanced IP Scanner  | <https://www.advanced-ip-scanner.com/>             | scans LAN for IP of connected devices |
 | Radeon GPU           | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/AMD/Intel-AMD-Radeon-RX-Vega-M-Graphics-Driver-30-0-13037-4001-64-bit.shtml> | |
 | Intel HD Graphics    | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/INTEL/Intel-HD-630-CPU-Graphics-Driver-31-0-101-2130.shtml> | |
+
+## Total Commander ##
+
+After Windows clean install run it from `%OneDrive%\backup\TotalCMD\Total Commander_from_E.lnk`, pin it to taskbar
+
+[TC Internal File Associations Tutorial](https://ghisler.ch/wiki/index.php/Internal_File_Associations_Tutorial)
 
 ## Visual Studio Code ##
 
@@ -103,7 +112,43 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
 ```
 
-## to be (re)moved ##
+## LosslessCut ##
+
+1. config file is set to program directory as described [here](https://mifi.github.io/lossless-cut/installation.html)
+
+## MKVToolnix ##
+
+[User forum](https://help.mkvtoolnix.download/)
+
+## JMkvpropedit ##
+
+requires OPEN JDK [Adoptium](https://adoptium.net/en-GB/)
+
+## MKV Muxing Batch GUI ##
+
+settings are in `%APPDATA%\MKV Muxing Batch GUI\setting.json`, there is not known how to change its location so far
+
+## XnView MP ##
+
+1. install from ZIP file, setting file `xnview.ini` is in the same directory as application (to be set up on first run)
+
+2. internal association in Total Commander defined via saved search "bitmap graphics", it includes following extensions: `JPG,JPEG,PNG,TIFF,BMP,GIF,WEBP`
+
+## PotPlayer ##
+
+1. install portable as [instructed here](https://www.portablefreeware.com/index.php?id=2483), same method for PotPlayer Codec Pack 64-bit
+
+2. internal association in Total Commander defined via saved search "video files", it includes following extensions: `AVI,WMV,WMP,WM,ASF,MPG,MPEG,MPE,M1V,M2V,MPV2,MP2V,TS,TP,TPR,TRP,VOB,IFO,OGM,OGV,MP4,M4V,M4P,3GP,3GPP,3G2,3GP2,MKV,RM,RAM,RMVB,RPM,FLV,MOV,QT,AMR,NSV,DPG,M2TS,M2T,MTS,DVR-MS,K3G,SKM,EVO,NSR,AMV,DIVX,WEBM,WTV,F4V,MXF,WVX,WMX,MPLS,MPL,BIK`
+
+## Sumatra PDF ##
+
+1. install from ZIP file, setting file `SumatraPDF-settings.txt` is in the same directory as application
+
+2. internal association in Total Commander defined via saved search "eBook files", it includes following extensions: `PDF,EPUB,MOBI,AZW,FB2,FB2Z,ZFB2,PDB,TCR,CBZ,CBR,CBT,CB7,DJV,DJVU,CHM,XPS,OXPS,XOD`
+
+## For further processing ##
+
+### [FileInfo.com](https://fileinfo.com/) ###
 
 ### Foobar ###
 
