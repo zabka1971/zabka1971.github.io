@@ -2,7 +2,11 @@
 
 ## Software
 
+<!--- cSpell:words MobaXterm,zabkinedobroty --->
+
 ### [Windows machine environment setup](win_setup.md#windows-machine-environment-setup)
+
+### [Books to read](books_to_read.md#books-to-read)
 
 ### [MS Office](ms_office.md)
 
