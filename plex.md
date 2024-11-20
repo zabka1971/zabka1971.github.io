@@ -26,8 +26,8 @@ and for a multi-disc album:
 
 do note the distinction between Albumartist and Trackartist.
 There are separate metatags for these. You need to fill both.
-This then provides a means to deal with sampler albums: 
-The typical sampler simply uses as Albumartist Various Artists 
+This then provides a means to deal with sampler albums:
+The typical sampler simply uses as Albumartist Various Artists
 And that is what you should use too, since Plex treats 'Various Artists' a little different. (the standard album sorting mechanism is by release year, descending whereas for Various Artists it is alphabetically, ascending)
 
 You can supply your **own artist photos, artist backdrops and album backdrops**.
@@ -69,9 +69,9 @@ Set Raspberry Pi3 Embedded PMP clock/time zone
 
 1. Connect through SSH (Used Putty) and connect to "PlexMediaPlayer"
 
-User: Root or root
+   User: Root or root
 
-Password: plex
+   Password: plex
 
 2. nano /storage/.config/autostart.sh
 
@@ -99,4 +99,3 @@ How to setup sound in RasPlex: for current amplifier configuration apply setting
 location of Plex database: /volume1/Plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db
 File is Sqlite database.
 Directory is visible through SSH client only. Use WinSCP.
-

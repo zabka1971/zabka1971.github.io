@@ -17,6 +17,3 @@ Non-english subtitles have to be saved with 'UTF-8 with BOM' encoding to be corr
 ## Images
 
 ## Books
-
-
-
