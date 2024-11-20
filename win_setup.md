@@ -62,6 +62,7 @@ Batch file `%COMMANDER_DRIVE%\_\set_environment.cmd` creates all environmental v
 | PicPick                                       | <https://picpick.app>                              | All-in-one design tool for everyone                                                     |
 | PeaZip                                        | <https://peazip.github.io/peazip-portable.html>    | free file archiver utility                                                              |
 | Sumatra PDF                                   | <https://www.sumatrapdfreader.org/>                | PDF, eBook (epub, mobi), comic book (cbz/cbr), DjVu, XPS, CHM, image viewer for Windows |
+| [Calibre](#calibre)                           | <https://calibre-ebook.com/>                       | eBook management                                                                        |
 
 ### Non-actively used ###
 
@@ -145,6 +146,16 @@ settings are in `%APPDATA%\MKV Muxing Batch GUI\setting.json`, there is not know
 1. install from ZIP file, setting file `SumatraPDF-settings.txt` is in the same directory as application
 
 2. internal association in Total Commander defined via saved search "eBook files", it includes following extensions: `PDF,EPUB,MOBI,AZW,FB2,FB2Z,ZFB2,PDB,TCR,CBZ,CBR,CBT,CB7,DJV,DJVU,CHM,XPS,OXPS,XOD`
+
+## Calibre ##
+
+Download [Portable Calibre](https://calibre-ebook.com/download_portable)
+
+Default library is in `\\zabkanas\literature\_calibre\`
+
+Switch `--with-library` can be used to specify library on application start
+
+[Calibre Manual](https://manual.calibre-ebook.com/)
 
 ## For further processing ##
 
