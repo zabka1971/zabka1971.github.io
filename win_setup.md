@@ -66,24 +66,30 @@ Batch file `%COMMANDER_DRIVE%\_\set_environment.cmd` creates all environmental v
 
 ### Non-actively used ###
 
-| Utility              | Link                                               | Comment |
-| -------------------- | -------------------------------------------------- | ------- |
-| Tidal                | <https://listen.tidal.com/>                        | High Fidelity Music Streaming |
-| Plex                 | <https://www.plex.tv/>                             | Streaming media service |
-| Sysinternals         | <https://learn.microsoft.com/en-us/sysinternals/>  | advanced system utilities |
-| File Converter       | <https://www.freeconvert.com/>                     | Easily convert files from one format to another, online |
-| Rufus                | <https://rufus.ie/en/>                             | Create bootable USB drives the easy way |
-| UniGetUI             | <https://github.com/marticliment/UnigetUI>         | intuitive GUI for the most common CLI package managers for Windows |
-| stacher.io           | <https://stacher.io/>                              | A Beautiful, Modern GUI for YT-DLP |
-| Advanced IP Scanner  | <https://www.advanced-ip-scanner.com/>             | scans LAN for IP of connected devices |
-| Radeon GPU           | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/AMD/Intel-AMD-Radeon-RX-Vega-M-Graphics-Driver-30-0-13037-4001-64-bit.shtml> | |
-| Intel HD Graphics    | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/INTEL/Intel-HD-630-CPU-Graphics-Driver-31-0-101-2130.shtml> | |
+| Utility             | Link                                                                                                                           | Comment                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| Tidal               | <https://listen.tidal.com/>                                                                                                    | High Fidelity Music Streaming                                      |
+| Plex                | <https://www.plex.tv/>                                                                                                         | Streaming media service                                            |
+| Sysinternals        | <https://learn.microsoft.com/en-us/sysinternals/>                                                                              | advanced system utilities                                          |
+| File Converter      | <https://www.freeconvert.com/>                                                                                                 | Easily convert files from one format to another, online            |
+| Rufus               | <https://rufus.ie/en/>                                                                                                         | Create bootable USB drives the easy way                            |
+| UniGetUI            | <https://github.com/marticliment/UnigetUI>                                                                                     | intuitive GUI for the most common CLI package managers for Windows |
+| stacher.io          | <https://stacher.io/>                                                                                                          | A Beautiful, Modern GUI for YT-DLP                                 |
+| Advanced IP Scanner | <https://www.advanced-ip-scanner.com/>                                                                                         | scans LAN for IP of connected devices                              |
+| Radeon GPU          | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/AMD/Intel-AMD-Radeon-RX-Vega-M-Graphics-Driver-30-0-13037-4001-64-bit.shtml> |                                                                    |
+| Intel HD Graphics   | <https://drivers.softpedia.com/get/GRAPHICS-BOARD/INTEL/Intel-HD-630-CPU-Graphics-Driver-31-0-101-2130.shtml>                  |                                                                    |
 
 ## Total Commander ##
 
 After Windows clean install run it from `%OneDrive%\backup\TotalCMD\Total Commander_from_E.lnk`, pin it to taskbar
 
 [TC Internal File Associations Tutorial](https://ghisler.ch/wiki/index.php/Internal_File_Associations_Tutorial)
+
+### Plugins ###
+
+Plugin Directory: `%COMMANDER_PATH%\plugins\`
+
+[WLX Markdown Viewer 2.5](https://totalcmd.net/plugring/markdownviewer.html)
 
 ## Visual Studio Code ##
 

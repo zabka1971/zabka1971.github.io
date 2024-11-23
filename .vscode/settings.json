@@ -33,5 +33,9 @@
     ],
     "cSpell.ignoreWords": [
         "Chosts"
-    ]
+    ],
+    "cSpell.languageSettings": [],
+    "cSpell.enabledFileTypes": {
+        "markdown": true
+    }
 }
